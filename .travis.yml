@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - "0.10"
 before_install: "sudo apt-get install -qq libfuse-dev pkg-config fuse user-mode-linux && sudo mknod /dev/fuse c 10 229 && sudo chmod 666 /dev/fuse"
-script: "npm run-script travis"
+script: "tools/travis.sh"
