@@ -54,9 +54,9 @@ describe('Autoprefixer', function () {
     });
   });
 
-  it('should prefix autoprefixer/unprefixed.scss', function (done) {
-    var actual = path.join(mnt, 'autoprefixer/unprefixed.scss');
-    var expected = path.join(compiled, 'autoprefixer/unprefixed.scss');
+  it('should prefix autoprefixer/unprefixed-scss.scss', function (done) {
+    var actual = path.join(mnt, 'autoprefixer/unprefixed-scss.css');
+    var expected = path.join(compiled, 'autoprefixer/unprefixed-scss.css');
 
     async.parallel([
       fs.readFile.bind(undefined, actual, 'utf-8'),
@@ -69,9 +69,9 @@ describe('Autoprefixer', function () {
     });
   });
 
-  it('should prefix autoprefixer/unprefixed.less', function (done) {
-    var actual = path.join(mnt, 'autoprefixer/unprefixed.less');
-    var expected = path.join(compiled, 'autoprefixer/unprefixed.less');
+  it('should prefix autoprefixer/unprefixed-less.less', function (done) {
+    var actual = path.join(mnt, 'autoprefixer/unprefixed-less.css');
+    var expected = path.join(compiled, 'autoprefixer/unprefixed-less.css');
 
     async.parallel([
       fs.readFile.bind(undefined, actual, 'utf-8'),
@@ -85,8 +85,8 @@ describe('Autoprefixer', function () {
   });
 
   it('should prefix autoprefixer/unprefixed.myth', function (done) {
-    var actual = path.join(mnt, 'autoprefixer/unprefixed.myth');
-    var expected = path.join(compiled, 'autoprefixer/unprefixed.myth');
+    var actual = path.join(mnt, 'autoprefixer/unprefixed-myth.css');
+    var expected = path.join(compiled, 'autoprefixer/unprefixed-myth.css');
 
     async.parallel([
       fs.readFile.bind(undefined, actual, 'utf-8'),
@@ -100,8 +100,8 @@ describe('Autoprefixer', function () {
   });
 
   it('should prefix autoprefixer/unprefixed.styl', function (done) {
-    var actual = path.join(mnt, 'autoprefixer/unprefixed.styl');
-    var expected = path.join(compiled, 'autoprefixer/unprefixed.styl');
+    var actual = path.join(mnt, 'autoprefixer/unprefixed-styl.css');
+    var expected = path.join(compiled, 'autoprefixer/unprefixed-styl.css');
 
     async.parallel([
       fs.readFile.bind(undefined, actual, 'utf-8'),
